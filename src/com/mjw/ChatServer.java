@@ -38,7 +38,6 @@ public class ChatServer {
             while (true) {
                 try {
                     msg = br.readLine();
-                    System.out.println(msg);
                     send(socketSet,msg);
                     } catch (IOException e) {
                     e.printStackTrace();
